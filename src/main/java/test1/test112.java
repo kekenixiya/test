@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.SimpleFormatter;
 
 public class test112 {
 
@@ -47,6 +48,10 @@ public class test112 {
 //                System.out.println(decimalFormat.format(double1));
 //                System.out.println(double1);
 
+        System.out.println( System.currentTimeMillis());
 
+        Date  date = new Date(System.currentTimeMillis()) ;
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        System.out.println(simpleDateFormat.format(date));
     }
 }
