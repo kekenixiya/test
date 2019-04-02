@@ -1,6 +1,8 @@
 package test1;
 
 import java.nio.channels.SelectionKey;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test2 {
     public static void main(String[] args) {
@@ -16,6 +18,9 @@ public class Test2 {
 //        str.substring(0,index);
 //        SelectionKey.OP_ACCEPT
 
-        System.out.println(1&12);
+        System.out.println(2&3);
+
+        Map map = new HashMap();
+        System.out.println(map.get("sss"));
     }
 }
