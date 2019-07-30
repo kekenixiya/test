@@ -52,6 +52,6 @@ public class test112 {
 
         Date  date = new Date(System.currentTimeMillis()) ;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        System.out.println(simpleDateFormat.format(date));
+        System.out.println(simpleDateFormat.format(date).trim());
     }
 }

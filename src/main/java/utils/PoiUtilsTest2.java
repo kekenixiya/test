@@ -27,6 +27,10 @@ public class PoiUtilsTest2 {
                 if ( "xls".equals(split[1])){
                     FileInputStream fis = new FileInputStream(excel);   //文件流对象
                     wb = new HSSFWorkbook(fis);
+                    wb.getNumberOfSheets();
+                   Sheet sheetAt = wb.getSheetAt(0);
+                    sheetAt.getPhysicalNumberOfRows();
+//                    sheetAt.getRow()
                 }else if ("xlsx".equals(split[1])){
                     FileInputStream fis = new FileInputStream(excel);   //文件流对象
                     wb = new XSSFWorkbook(fis);
